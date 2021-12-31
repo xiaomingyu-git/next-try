@@ -12,6 +12,14 @@ const BlogList:React.FC =() =>{
 
 	return(
 		<div>
+			<Link href={`/`} >
+				<ListItem button >
+					<ListItemIcon>
+						<DashboardIcon />
+					</ListItemIcon>
+					<ListItemText primary= {'首页'} />
+				</ListItem>
+			</Link>
 			{getAllPosts().map(({ slug, module: { default: Component, meta } }, index) => (
 				<Link href={`/blog/${slug}`} key={index} >
 				<ListItem button key={index}>

@@ -1,10 +1,7 @@
+import BlogArticalLayout from "../../componments/BlogArticalLayout";
+
 # 测试结果
-
-### 就是这样
-
-**这是着重**
-
-这是普通
+#### 这里就是md的方法
 
 export const meta = {
     private: true,
@@ -12,3 +9,5 @@ export const meta = {
     description: `Hey! We're getting really close to releasing React + Vue support for Tailwind UI, so I thought it would be interesting to share some of the behind-the-scenes efforts that have gone into even making it possible.`,
     date: '2021-04-12T19:45:00.0Z',
 }
+
+export default ({ children }) => <BlogArticalLayout meta={meta}>{children}</BlogArticalLayout>
