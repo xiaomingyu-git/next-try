@@ -11,7 +11,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import('../componments/ReNext'),
 })
 const Home: NextPage = () => {
 
-  
+
   return (
     <div >
           <Grid container spacing={2}>
